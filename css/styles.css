@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Teko:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #fd3b00;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem 1rem 0 0 ;
+}
+.header__title{
+    font-size: 38px;
+    color: #ddd;
+}
+.header__figure img{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+/* card pokemon greninja */
+
+.main{
+    padding: 2rem;
+    background-color: #2a6da6;
+}
+.section_pokemon-name{
+    display: flex;
+    align-items: center;
+    padding-block: 2rem;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+    border-radius: .4rem;
+    background-color: #2b5579;
+    font-size: 1.5rem;
+}
+.section_pokemon-name img{
+    width: 100%;
+    max-width: 2rem;
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    gap: 2rem;
+}
+.section__pokemon{
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+.section__pokemon-title{
+    text-align: center;
+}
+.section__pokemon-img img{
+    width: 100%;
+    max-width: 28rem;
+}
+.section__pokemon-img{
+    display: flex;
+    justify-content: center; 
+}
+
+/* information pokemons */
+.section__information{
+    border-radius: 1rem;
+    background-color: #2b5579;
+    box-shadow: 0 0 3rem  -1rem rgba(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+}
+.section__information span{
+    font-size: 1.6rem;
+    float: left;
+    width: 50%;
+    padding: 2.5rem;
+    text-align: center;
+}
+.section__information p{
+    font-size: 2rem;
+}
+
+/* other pokemons */
+.footer{
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: #fd3b00;
+    border-radius: 0 0 1.2rem 1.2rem;
+    align-items: center;
+}
+.footer__text{
+    font-size: 45px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width: 100%;
+    height: auto;
+}
+.footer figure:hover{
+    background-color: #7c7a7a;
+}
+.footer__figure{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 10%;
+    background-color: #BBBBBB;
+}
+
+/* desing responsive */
+@media screen and (max-width: 629px) {
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -8rem;
+    }
+
+    .footer_figure{
+        height: 50%;
+    }
+
+    .section__pokemon {
+        width: 280px;
+        margin: 0px 0px;
+        transform: translateY(142px);
+    }
+}
