@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body{
@@ -65,7 +65,7 @@ header{
 }
 .section__pokemon-img{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* information pokemons */
@@ -95,6 +95,7 @@ header{
     background-color: #fd3b00;
     border-radius: 0 0 1.2rem 1.2rem;
     align-items: center;
+    overflow-x: auto;
 }
 .footer__text{
     font-size: 45px;
@@ -114,6 +115,11 @@ header{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 10%;
     background-color: #BBBBBB;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    /* overflow-x: auto; */
+
 }
 
 /* desing responsive */
