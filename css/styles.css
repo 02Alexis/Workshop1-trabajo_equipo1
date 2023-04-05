@@ -55,17 +55,20 @@ header{
 .section__pokemon{
     border-radius: 1rem;
     text-transform: uppercase;
+
 }
 .section__pokemon-title{
     text-align: center;
 }
 .section__pokemon-img img{
     width: 100%;
-    max-width: 28rem;
+    max-width: 24rem;
 }
 .section__pokemon-img{
     display: flex;
     justify-content: center;
+    align-items: center;
+    object-fit: scale-down;
 }
 
 /* information pokemons */
@@ -106,6 +109,8 @@ header{
 .footer img{
     width: 100%;
     height: auto;
+    margin-left: 10%;
+    gap: 10px;
 }
 .footer figure:hover{
     background-color: #7c7a7a;
@@ -115,11 +120,18 @@ header{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 10%;
     background-color: #BBBBBB;
-    display: flex;
-    align-items: center;
+    margin-left: 20px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
     /* flex-direction: row; */
     /* overflow-x: auto; */
 
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
 }
 
 /* desing responsive */
