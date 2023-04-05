@@ -104,37 +104,47 @@ header {
 }
 
 /* other pokemons */
-.footer {
-  padding: 2rem;
-  display: inline-flex;
-  justify-content: space-evenly;
-  background-color: #fd3b00;
-  border-radius: 0 0 1.2rem 1.2rem;
-  align-items: center;
+.footer{
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: #fd3b00;
+    border-radius: 0 0 1.2rem 1.2rem;
+    align-items: center;
+    overflow-x: auto;
+}
+.footer__text{
+    font-size: 45px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width: 100%;
+    height: auto;
+    margin-left: 10%;
+    gap: 10px;
+}
+.footer figure:hover{
+    background-color: #7c7a7a;
+}
+.footer__figure{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 10%;
+    background-color: #BBBBBB;
+    margin-left: 20px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    /* flex-direction: row; */
+    /* overflow-x: auto; */
+
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
   overflow-x: auto;
-}
-.footer__text {
-  font-size: 45px;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-}
-.footer img {
-  width: 100%;
-  height: auto;
-}
-.footer figure:hover {
-  background-color: #7c7a7a;
-}
-.footer__figure {
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 10%;
-  background-color: #bbbbbb;
-  display: flex;
-  align-items: center;
-  /* flex-direction: row; */
-  /* overflow-x: auto; */
 }
 
 /* desing responsive */
