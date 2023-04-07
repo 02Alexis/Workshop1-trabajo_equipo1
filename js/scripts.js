@@ -73,7 +73,7 @@ const showOnePokemon = (pokemon, container) => {
 <article class="section__information">
   <span>NO. <p>${pokemon.data.id}</p></span>
   <span>LEVEL <p>${pokemon.data.id}</p></span>
-  <span>TYPES <p>${typeToShow}</p></span>
+  <span>TYPES <p>${typeToShow.join(" / ")}</p></span>
   <span>HABILITIES <p>${abilityToShow}</p></span>
   <span>HEIGHT <p>${pokemon.data.height} m</p></span>
   <span>WEIGHT <p>${pokemon.data.weight} kg</p></span>
@@ -123,3 +123,16 @@ search.addEventListener("submit", (e) => {
 
   }
 })
+
+// *********************botones para overflow de imagenes***********************
+const contenedor = document.querySelector('.contenedor');
+const botonIzquierda = document.querySelector('#izquierda');
+const botonDerecha = document.querySelector('#derecha');
+
+botonIzquierda.addEventListener('click', () => {
+  contenedor.scrollLeft -= 100;
+});
+
+botonDerecha.addEventListener('click', () => {
+  contenedor.scrollLeft += 100;});
+
