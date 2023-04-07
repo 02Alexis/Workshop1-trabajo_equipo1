@@ -147,6 +147,14 @@ header {
   overflow-x: auto;
 }
 
+/* nombre en footer */
+.footer__figure {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+ 
+}
+
 /* desing responsive */
 @media screen and (max-width: 629px) {
   .section {
@@ -166,3 +174,4 @@ header {
     transform: translateY(142px);
   }
 }
+
