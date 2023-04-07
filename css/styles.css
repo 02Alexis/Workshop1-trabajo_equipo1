@@ -160,6 +160,14 @@ figure:hover{
   flex-direction:row;
 }
 
+/* nombre en footer */
+.footer__figure {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+ 
+}
+
 /* desing responsive */
 @media screen and (max-width: 629px) {
   .section {
@@ -186,3 +194,4 @@ figure:hover{
     flex-direction:row;
   }
 }
+
